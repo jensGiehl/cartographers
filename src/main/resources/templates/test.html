@@ -1,0 +1,23 @@
+<html lang="de" xmlns:th="http://www.thymleaf.com">
+    <head th:replace="fragments/layout :: header('Testpage')"></head>
+    <body class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div th:replace="fragments/card :: card(card=${card}, module=${module})"></div>
+                </div>
+                <div class="col-4">
+                    <div th:replace="fragments/card :: card(card=${card2}, module=${module})"></div>
+                </div>
+                <div class="col-4">
+                    <div th:replace="fragments/card :: card(card=${card3}, module=${module})"></div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <div th:replace="fragments/card :: card(card=${card4}, module=${module})"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "id" : "17",
+    "timeValue" : 0,
+    "picture" : null,
+    "type" : "NORMAL",
+    "possibleTerrainTypes" : [ "O", "V", "F", "W", "X" ],
+    "possibleShapes" : [ {
+      "amountOfGold" : 0,
+      "shape" : [ [ "#"] ]
+    } ]
+  }

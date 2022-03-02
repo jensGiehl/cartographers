@@ -1,0 +1,64 @@
+<html lang="de" xmlns:th="http://www.thymleaf.com">
+    <head th:replace="fragments/layout :: header(#{index.title})"></head>
+    <body class="bg-dark text-white pt-4">
+        <div class="container-fluid h-100 d-flex flex-column">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 th:text="#{index.headline}">Der Kartograph</h1>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="w-50 mx-auto">
+                            <label for="name" th:text="#{index.name.label}">What's our name?</label>
+                            <p class="card-text">
+                                <input id="myName" name="name" type="text" class="form-control form-control-lg" th:value="${playerName}" th:placeholder="#{index.name.placeholder}" maxlength="50" required autocomplete="nickname" autofocus>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100">
+              <div class="col-sm-5 align-self-center">
+                <div class="text-center">
+                    <form th:action="@{/createGame}" method="POST">
+                        <input type="hidden" name="name" id="hostName"/>
+                        <button id="createGame" type="submit" th:text="#{index.create.button}" class="btn btn-lg btn-primary createNew">Create</button>
+                    </form>
+                </div>
+              </div>
+              <div class="col-sm-2 align-self-center text-center font-weight-bold">
+                <h2 th:text="#{index.or}" class="text-uppercase">ODER</h2>
+              </div>
+              <div class="col-sm-5 align-self-center">
+                    <h2 th:text="#{index.join.title}">Join</h2>
+                    <p>
+                        <form th:action="@{/joinGame}" method="POST">
+                            <input type="hidden" name="name" id="joinName"/>
+                            <p>
+                                <input name="gameId" type="text" class="form-control form-control-lg" th:placeholder="#{index.join.gameId.placeholder}" maxlength="50" required autocomplete="off"> 
+                            </p>
+                            <p class="text-center">
+                                <button id="joinGame" type="submit" th:text="#{index.join.button}" class="btn btn-lg btn-success">Join</button>
+                            </p>
+                        </form>
+                    </p>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(document).delegate('#createGame', 'click', function(e) {
+                var name = $("#myName").val();
+                $("#hostName").val(name);
+                return true;
+            });
+
+            $(document).delegate('#joinGame', 'click', function(e) {
+                var name = $("#myName").val();
+                $("#joinName").val(name);
+                return true;
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+<html lang="de" xmlns:th="http://www.thymleaf.com">
+    <head th:replace="fragments/layout :: header(#{'card.'+${card.id}+'.name'})"></head>
+    <body class="bg-dark text-white pt-4">
+        <div th:replace="fragments/card :: card(card=${card}, module=${module})"></div>
+    </body>
+</html>

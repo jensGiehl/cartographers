@@ -1,0 +1,67 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div class="card text-dark" style="width: 100%" th:fragment="card(card, module)">
+            <embed th:if="${card.picture ne null}" th:src="@{'/assets/images/card/' + ${card.picture}}" class="card-img-top">
+            
+            <div class="card-body" th:if="${card.type == T(de.agiehl.games.cartographers.card.modell.CardType).NORMAL}">
+              <div class="card-title">
+                <div class="row">
+                  <div class="col-1">
+                    <embed th:src="@{'/assets/images/img_hourglas.svg'}" width="26" height="26">
+                  </div>
+                  <div class="col-1">
+                    <span th:text="${card.timeValue}" class="text-nowrap font-weight-bold"></span>
+                  </div>
+                  <div class="col-8">
+                    <h5 class="card-title text-center text-nowrap" th:text="#{'card.'+${card.id}+'.name'}">NAME</h5>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                  <div class="row d-flex justify-content-center border-bottom border-secondary">
+                      <div th:class="${'col-' + (12 / #lists.size(card.possibleTerrainTypes)) + ' border-right mb-3 border-secondary'}" th:each="terrain : ${card.possibleTerrainTypes}">
+                        <embed th:src="@{'/assets/images/img_' + ${terrain.name()} + '.svg'}">
+                      </div>
+                  </div>
+                  <div class="row d-flex justify-content-center mt-3">
+                    <div th:class="${'col-'+ (12 / #lists.size(card.possibleShapes)) +' border-right border-secondary'}" th:each="shape, stat : ${card.possibleShapes}">
+                        <embed th:src="@{'/assets/images/card_'+${module}+'_'+${card.id}+'-'+${stat.index} + '.svg'}">
+                    </div>
+                  </div>
+              </p>
+            </div>
+
+            <div class="card-body" th:if="${card.type == T(de.agiehl.games.cartographers.card.modell.CardType).RUINS}">
+              <div class="card-title">
+                  <h5 class="card-title text-center" th:text="#{'card.'+${card.id}+'.name'}">NAME</h5>
+              </div>
+              <p class="card-text">
+                  <div class="row d-flex justify-content-center mt-3">
+                    <div class="col-12">
+                        <embed th:src="@{'/assets/images/img_' + ${card.type} +'.svg'}">
+                    </div>
+                  </div>
+              </p>
+            </div>
+
+            <div class="card-body" th:if="${card.type == T(de.agiehl.games.cartographers.card.modell.CardType).AMBUSH}">
+              <div class="card-title">
+                  <h5 class="card-title text-center" th:text="#{'card.'+${card.id}+'.name'}">NAME</h5>
+              </div>
+              <p class="card-text">
+                  <div class="row d-flex justify-content-center mt-3">
+                      <div class="col-4 border-right border-secondary">
+                          <embed th:src="@{'/assets/images/img_'+${card.rotation.name()} + '.svg'}">
+                      </div>
+                      <div class="col-8 border-right border-secondary" th:each="shape, stat : ${card.possibleShapes}">
+                          <embed th:src="@{'/assets/images/card_'+${module}+'_'+${card.id}+'-'+${stat.index} + '.svg'}">
+                      </div>
+                  </div>
+              </p>
+            </div>
+
+          </div>
+    </body>
+</html>

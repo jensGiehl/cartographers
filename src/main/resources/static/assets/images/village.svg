@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="42mm" height="42mm" version="1.1" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-51.571 -87.012)">
+  <g id="house" transform="translate(-31.97 -1.6949)">
+   <path d="m83.541 88.707h42v42h-42z" fill="#d40000" stroke-width="0"/>
+   <g transform="matrix(1.2982 0 0 1.2081 -17.347 -94.815)" fill="none" stroke="#f55">
+    <rect x="84.857" y="167.98" width="17.988" height="15.435" stroke-width="1.9881"/>
+    <g transform="matrix(.7344 0 0 .79255 24.95 34.615)" stroke-width="1.965">
+     <path d="m85.386 167.98h-8.829l17.876-17.661"/>
+     <path d="m102.31 167.98h8.8291l-17.876-17.661"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

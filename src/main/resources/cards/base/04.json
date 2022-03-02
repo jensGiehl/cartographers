@@ -1,0 +1,16 @@
+{
+    "id" : "04",
+    "timeValue" : 0,
+    "picture" : null,
+    "type" : "AMBUSH",
+    "rotation": "COUNTERCLOCKWISE",
+    "possibleTerrainTypes" : [ "X" ],
+    "possibleShapes" : [ {
+        "amountOfGold" : 0,
+        "shape" : [ 
+            [ "X", "X" ], 
+            [ "X", "-" ],
+            [ "X", "X" ]
+         ]
+      } ]
+  }

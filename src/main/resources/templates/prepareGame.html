@@ -1,0 +1,61 @@
+<html lang="de" xmlns:th="http://www.thymleaf.com">
+    <head th:replace="fragments/layout :: header(#{prepare.game.title.waiting})"></head>
+    <body class="bg-dark text-white pt-4">
+
+        <div class="container-fluid align-self-center text-center pb-5">
+            <h1 th:text="#{prepare.game.headline}">Ready to go?</h1>
+            <h5 th:text="#{prepare.game.gameId(${gameId})}">Spiel-ID</h5>
+        </div>
+
+        <div id="playerList" th:fragment="playerList">
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col" th:text="#{prepare.game.playerlist.name}">Playername</th>
+                    <th scope="col" th:text="#{prepare.game.playerlist.status}">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr th:each="player: ${playerList}">
+                    <td th:text="${player.playerName}">Player One</td>
+                    <td th:if="${player.ready}">
+                        <span th:replace="fragments/icons :: ready"></span>
+                    </td>
+                    <td th:if="${!player.ready}">
+                        <span th:replace="fragments/icons :: notReady"></span>
+                    </td>
+                  </tr>
+                  </tr>
+                </tbody>
+            </table>
+            <button type="button" id="iamReady" class="btn btn-success btn-lg" th:text="#{prepare.game.iamReady}" th:if="${!myStatus}">I am ready</button>
+            <script th:inline="javascript">
+                $(document).delegate('#iamReady', 'click', function(e) {
+                    console.log("Lets go");
+                    $.post( [[@{ready/}]], function(data) {
+                        console.log("Now you are ready!");
+                        }).fail(function() {
+                            console.log("Error while setting status");
+                        });
+                });
+            </script>
+        </div>
+
+        <script th:inline="javascript">
+            function fetchdata(){
+                $.get( [[@{checkReady}]], function(data) {
+                    $("#playerList").html(data);
+                });
+            }
+
+            $(document).ready(function(){
+                setInterval(fetchdata,1000);
+            });
+        </script>
+
+        <div class="container-fluid align-self-center text-center pt-5">
+            <button type="button" id="startGame" class="btn btn-primary btn-lg" th:text="#{prepare.game.startgame}">Start the game</button>
+        </div>
+
+    </body>
+</html>

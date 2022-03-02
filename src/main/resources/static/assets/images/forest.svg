@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="42mm" height="42mm" version="1.1" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-58.375 -78.696)">
+  <g transform="translate(-83.69 -9.3719)" stroke-width="0">
+   <path d="m142.07 88.068h42v42h-42z" fill="#008000"/>
+   <g transform="matrix(.85268 0 0 .89977 99.654 -49.975)" fill="#0f0">
+    <ellipse cx="58.751" cy="165.92" rx="7.7677" ry="7.4485"/>
+    <rect x="55.965" y="171.86" width="5.015" height="11.066"/>
+    <ellipse cx="58.751" cy="165.92" rx="7.7677" ry="7.4485"/>
+    <ellipse cx="89.443" cy="165.92" rx="7.7677" ry="7.4485"/>
+    <rect x="86.656" y="171.86" width="5.015" height="11.066"/>
+    <ellipse cx="89.443" cy="165.92" rx="7.7677" ry="7.4485"/>
+    <ellipse cx="74.097" cy="179.68" rx="7.7677" ry="7.4485"/>
+    <rect x="71.31" y="185.62" width="5.015" height="11.066"/>
+    <ellipse cx="74.097" cy="179.68" rx="7.7677" ry="7.4485"/>
+   </g>
+  </g>
+ </g>
+</svg>

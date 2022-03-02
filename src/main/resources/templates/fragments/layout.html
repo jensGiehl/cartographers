@@ -1,0 +1,25 @@
+<html lang="de" xmlns:th="http://www.thymleaf.com">
+    <head th:fragment="header(title)">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title th:text="${title}">Titel</title>
+
+        <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Baloo+Tammudu+2" />
+
+        <style>
+            div.border-bottom{
+                border-width: 5px !important;
+            }
+            div.border-right{
+                border-width:5px !important;
+            }
+            div.border-right:last-child{
+                border-right:0 !important;
+            }
+        </style>
+</html>

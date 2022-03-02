@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="42mm" height="41.997mm" version="1.1" viewBox="0 0 42 41.997" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-73.494 -84.746)">
+  <g id="ruines" transform="matrix(1.314 0 0 1.3722 31.551 -211.42)">
+   <path d="m33.708 216.12 13.242-0.15048 2.182 1.0534-0.15048 2.8592-0.82766 0.67717h-2.1068l0.15048-1.1286 1.7305 0.0752-1.3543-1.4296-12.189-0.15048-0.9029 0.60193 1.6553 1.2791v1.3544l-3.0097-0.15048-0.07524-3.8373z" stroke="#000" stroke-width=".26458px"/>
+   <g stroke-width="0">
+    <rect x="33.257" y="243.88" width="14.221" height="2.5582"/>
+    <rect x="34.611" y="240.42" width="11.361" height="1.9563"/>
+    <rect x="43.264" y="227.48" width=".9029" height="10.308"/>
+    <rect x="36.718" y="219.05" width="7.7499" height="2.483"/>
+    <rect x="36.718" y="237.04" width="7.7499" height="2.483"/>
+    <rect x="39.03" y="221.23" width=".9029" height="16.553"/>
+    <rect x="36.914" y="221.31" width=".9029" height="16.478"/>
+    <rect x="43.264" y="221.13" width=".9029" height="4.5145"/>
+    <rect x="41.147" y="221.13" width=".9029" height="7.5538"/>
+    <rect x="41.147" y="231.09" width=".9029" height="6.6965"/>
+    <rect x="49.661" y="243.88" width="14.221" height="2.5582"/>
+    <rect x="51.015" y="240.42" width="11.361" height="1.9563"/>
+    <rect x="52.593" y="237.04" width="7.7499" height="2.483"/>
+    <rect x="57.022" y="229.51" width=".9029" height="8.2765"/>
+    <rect x="52.789" y="229.58" width=".9029" height="7.6746"/>
+    <rect x="54.905" y="229.58" width=".9029" height="7.6746"/>
+    <rect x="59.139" y="229.51" width=".9029" height="8.2765"/>
+    <path d="m59.726 227.78-0.25057-0.30244-3.1366-0.0655-0.98956 0.92832-0.0446 2.1358 4.3631 0.0911z"/>
+   </g>
+  </g>
+ </g>
+</svg>
